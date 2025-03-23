@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = await useTranslations(lang);
+---
+
+<Layout title={t('home.title')}>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>{t('home.title')}</h1>
+      <p>{t('home.subtitle')}</p>
+      <div class="cta-buttons">
+        <a href={`/${lang}/products`} class="btn primary">{t('home.cta')}</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/images/product-hero.png" alt="产品展示" />
+    </div>
+  </section>
+
+  <section class="features-preview">
+    <h2>核心功能</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <div class="icon">🚀</div>
+        <h3>高效性能</h3>
+        <p>我们的产品提供卓越的性能，帮助您更快地完成工作。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>安全可靠</h3>
+        <p>采用先进的安全技术，保障您的数据安全。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔄</div>
+        <h3>无缝集成</h3>
+        <p>轻松与您现有的工具和系统集成，提高工作效率。</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .btn.primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: #4338ca;
+  }
+  
+  section {
+    margin: 6

@@ -1,22 +1,133 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+---
+import { getLangFromUrl, useTranslations, languages, getLanguageLink } from '../i18n/utils';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "" } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = await useTranslations(lang);
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href={`/${lang}/`}>Logo</a>
+        </div>
+        <ul>
+          <li><a href={`/${lang}/`}>{t('nav.home')}</a></li>
+          <li><a href={`/${lang}/products`}>{t('nav.products')}</a></li>
+          <li><a href={`/${lang}/about`}>{t('nav.about')}</a></li>
+          <li><a href={`/${lang}/contact`}>{t('nav.contact')}</a></li>
+        </ul>
+        <div class="language-switcher">
+          {Object.entries(languages).map(([code, name]) => (
+            <a href={getLanguageLink(Astro.url.pathname, code)} class={lang === code ? 'active' : ''}>
+              {name}
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>{t('footer.copyright')}</p>
+    </footer>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  /* 基础样式 */
+  :root {
+    --font-size-base: 1rem;
+    --color-primary: #4f46e5;
+    --color-text: #374151;
+    --color-bg: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: system-ui, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: var(--color-primary);
+  }
+  
+  .language-switcher {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .language-switcher a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .language-switcher a.active {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+    margin-top: 4rem;
+  }
 </style>

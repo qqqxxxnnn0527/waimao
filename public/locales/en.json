@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Product Name",
+    "subtitle": "A concise and powerful product description",
+    "cta": "Learn More"
+  },
+  "products": {
+    "title": "Our Products",
+    "viewDetails": "View Details"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "footer": {
+    "copyright": "Copyright © 2023"
+  }
+}
