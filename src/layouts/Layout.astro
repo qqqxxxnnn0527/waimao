@@ -31,7 +31,9 @@ const t = await useTranslations(lang);
     <header>
       <nav>
         <div class="logo">
-          <a href={`/${lang}/`}>Logo</a>
+          <a href={`/${lang}/`}>
+            <img src="/images/logo.png" alt="Logo" />
+          </a>
         </div>
         <ul>
           <li><a href={`/${lang}/`}>{t('nav.home')}</a></li>
@@ -90,6 +92,17 @@ const t = await useTranslations(lang);
     background-color: var(--color-bg-light);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     padding: 1rem 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
   }
   
   nav {
