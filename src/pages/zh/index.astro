@@ -25,18 +25,24 @@ const t = await useTranslations(lang);
     <h2 class="section-title">我们的服务</h2>
     <div class="feature-cards">
       <div class="feature-card" data-animation="1">
-        <div class="icon">🔒</div>
-        <h3>源头工厂</h3>
+        <div class="icon-title">
+          <div class="icon">🔒</div>
+          <h3>源头工厂</h3>
+        </div>
         <p>我们是源头工厂，所以服务更快速、更专业、更高性价比。</p>
       </div>
       <div class="feature-card" data-animation="2">
-        <div class="icon">🔄</div>
-        <h3>海外仓</h3>
+        <div class="icon-title">
+          <div class="icon">🔄</div>
+          <h3>海外仓</h3>
+        </div>
         <p>我们在多地海外仓备货，发货快、付款便捷、售后方便。</p>
       </div>
       <div class="feature-card" data-animation="3">
-        <div class="icon">🚀</div>
-        <h3>高效沟通</h3>
+        <div class="icon-title">
+          <div class="icon">🚀</div>
+          <h3>高效沟通</h3>
+        </div>
         <p>我们承诺在12小时内回复解决方案。</p>
       </div>
     </div>
@@ -190,7 +196,7 @@ const t = await useTranslations(lang);
   
   .feature-card {
     background-color: var(--color-card-bg);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
@@ -240,9 +246,16 @@ const t = await useTranslations(lang);
     opacity: 1;
   }
   
+  .icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
   .feature-card .icon {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -255,7 +268,7 @@ const t = await useTranslations(lang);
   
   .feature-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     color: var(--color-text);
     transition: transform 0.3s ease, color 0.3s ease;
   }
