@@ -21,22 +21,28 @@ const t = await useTranslations(lang);
   </section>
 
   <section class="features-preview">
-    <h2>Core Features</h2>
+    <h2>Our Services</h2>
     <div class="feature-cards">
       <div class="feature-card">
-        <div class="icon">🚀</div>
-        <h3>High Performance</h3>
-        <p>Our product delivers exceptional performance to help you complete your work faster.</p>
+        <div class="icon-title">
+          <div class="icon">🔒</div>
+          <h3>Source Factory</h3>
+        </div>
+        <p>We are a source factory, so our service is faster, more comprehensive and more cost-effective.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">🔒</div>
-        <h3>Secure & Reliable</h3>
-        <p>Using advanced security technology to ensure your data remains safe.</p>
+        <div class="icon-title">
+          <div class="icon">🔄</div>
+          <h3>Cross-border Warehouse</h3>
+        </div>
+        <p>We have multiple overseas warehouses, so receiving goods is faster, payment is more convenient, and maintenance is more accessible.</p>
       </div>
       <div class="feature-card">
-        <div class="icon">🔄</div>
-        <h3>Seamless Integration</h3>
-        <p>Easily integrates with your existing tools and systems to improve efficiency.</p>
+        <div class="icon-title">
+          <div class="icon">🚀</div>
+          <h3>Rapid Communication</h3>
+        </div>
+        <p>We will reply to your email within 12 hours with the most comprehensive solution.</p>
       </div>
     </div>
   </section>
@@ -68,7 +74,7 @@ const t = await useTranslations(lang);
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: white; /* 将颜色从 #1f2937 改为 white */
   }
   
   .hero p {
@@ -108,7 +114,7 @@ const t = await useTranslations(lang);
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #1f2937;
+    color: white; /* 将颜色从 #1f2937 改为 white */
   }
   
   .feature-cards {
@@ -119,20 +125,31 @@ const t = await useTranslations(lang);
   
   .feature-card {
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   }
   
+  .icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
   .feature-card .icon {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
   
   .feature-card h3 {
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     color: #1f2937;
+  }
+  
+  .feature-card p {
+    color: #1f2937; /* 添加更深的字体颜色，从默认颜色改为深灰色 */
   }
   
   @media (max-width: 768px) {
