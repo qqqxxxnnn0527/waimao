@@ -4,6 +4,14 @@
 
 <!-- Vercel Analytics -->
 <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+// 为window对象声明va属性
+declare global {
+  interface Window {
+    va: any;
+    vaq: any[];
+  }
+}
+
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
