@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "home": {
+    "title": "产品名称",
+    "subtitle": "简短有力的产品描述",
+    "cta": "了解更多"
+  },
+  "products": {
+    "title": "我们的产品",
+    "viewDetails": "查看详情"
+  },
+  "contact": {
+    "title": "联系我们",
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "消息",
+    "send": "发送"
+  },
+  "footer": {
+    "copyright": "版权所有 © 2023"
+  }
+}
