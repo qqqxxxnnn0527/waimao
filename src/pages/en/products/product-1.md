@@ -5,7 +5,7 @@ description: Detailed introduction and technical specifications of Product One
 image: /images/product-1.jpg
 ---
 
-# Product One
+# Exhaust Muffler 
 
 This is our flagship product with multiple advanced features and excellent performance.
 

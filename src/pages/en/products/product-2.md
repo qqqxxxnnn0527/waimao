@@ -1,65 +1,68 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: Product Four
-description: Detailed introduction and technical specifications of Product Four
+title: Stainless Steel Battery Relocation Kit
+description: 2V Car/RV/Marine Battery Box for Trailer, Boat, Trolling Motor, Kayak
 image: /images/product-2.jpg
+sidebar: true
 ---
 
-# Product Four
-
-Product Four is our agile solution designed for innovative businesses and startups, offering rapid deployment and flexible scaling capabilities.
+Our Stainless Steel Battery Relocation Kit is a premium solution for securely housing and relocating your battery in vehicles, boats, and other applications.
 
 ## Key Features
 
-- **Quick Start** - Complete setup within 15 minutes and start using immediately
-- **On-Demand Scaling** - Easily scale up or down resources according to business needs
-- **Innovative Features** - Monthly updates introducing the latest technologies and functionalities
-- **Developer-Friendly** - Rich APIs and development tools supporting custom development
+- **Durable Construction** - Made from high-quality stainless steel for maximum durability and corrosion resistance
+- **Universal Fit** - Compatible with most standard size batteries for cars, RVs, boats, and marine applications
+- **Secure Mounting** - Includes heavy-duty mounting hardware for stable and secure installation
+- **Weather Resistant** - Designed to withstand harsh outdoor conditions and marine environments
+- **Easy Installation** - Complete kit with all necessary hardware and detailed instructions
 
 ## Technical Specifications
 
 | Specification | Details |
 | --- | --- |
-| Deployment Time | Within 15 minutes |
-| Scaling Capability | Automatic scaling without manual intervention |
-| Update Frequency | Monthly updates |
-| Development Tools | SDKs supporting all major programming languages |
-| Integration Capability | Support for 500+ third-party application integrations |
+| Material | 304 Stainless Steel |
+| Dimensions | 13" x 7" x 9" (L x W x H) |
+| Weight Capacity | Up to 50 lbs |
+| Battery Compatibility | Group 24, 27, 31 batteries |
+| Mounting Hardware | Included stainless steel bolts and brackets |
+| Warranty | 2-year limited warranty |
 
-## Use Cases
-
-This product is suitable for the following scenarios:
-
-1. Startups rapidly building product prototypes
-2. Agile development for innovative projects
-3. Digital transformation for small and medium businesses
-4. Developers building and testing new applications
-5. Educational institutions for teaching and research
+<div class="use-cases-section">
+  <h2>Use Cases</h2>
+  <p>This battery box is ideal for the following applications:</p>
+  <ol>
+    <li>Marine vessels and boats requiring secure battery storage</li>
+    <li>RVs and campers needing additional battery capacity</li>
+    <li>Off-road vehicles with custom battery setups</li>
+    <li>Kayaks and small watercraft with electric trolling motors</li>
+    <li>Race cars and performance vehicles with battery relocation needs</li>
+  </ol>
+</div>
 
 ## Customer Reviews
 
-> "Product Four helped us go from concept to launch in just two weeks, saving us a tremendous amount of time and resources." - Chris Wang, Tech Entrepreneur
+> "This battery box has been perfect for my fishing boat. Rock solid construction and easy to install." - Michael T., Boating Enthusiast
 
-> "As a startup, we needed tools that could iterate quickly, and Product Four is exactly what we needed." - Xiao Lin, Product Manager
+> "I needed a secure way to mount an auxiliary battery in my off-road Jeep, and this kit was exactly what I needed." - Sarah K., Off-road Driver
 
-## Innovative Features
+## Product Features
 
-### No-Code Development
+### Corrosion Resistant
 
-Build complex applications through an intuitive drag-and-drop interface without programming knowledge.
+The 304 stainless steel construction ensures long-lasting performance even in saltwater environments.
 
-### Smart Templates
+### Ventilated Design
 
-Provides dozens of industry templates to create professional applications with just a few clicks.
+Strategic ventilation prevents battery gas buildup while keeping water and debris out.
 
-### Developer Community
+### Secure Locking Mechanism
 
-An active developer community offering plugins, components, and solutions to accelerate your development process.
+Includes a locking system to prevent theft and ensure the battery stays in place during rough conditions.
 
-## Pricing Model
+## Installation Guide
 
-Product Four uses a flexible subscription model where you only pay for the resources you actually use, with no long-term contract obligations and the ability to adjust or cancel at any time.
+Installation is straightforward with the included hardware. Simply mount the base to your desired location, place your battery inside, and secure with the included top bracket and fasteners.
 
 ## Learn More
 
-If you want to learn more about Product Four, please [contact us](/en/contact) or [try it now](/en/trial) (14-day free trial available).
+For more information about our Stainless Steel Battery Relocation Kit, please [contact us](/en/contact) or [view installation videos](/en/videos).

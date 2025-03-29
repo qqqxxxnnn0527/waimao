@@ -1,39 +1,80 @@
 ---
 import Layout from './Layout.astro';
-import { getLangFromUrl } from '../i18n/utils';
-
 const { frontmatter } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+
+// 添加这段代码来处理侧边栏内容
+let mainContent = await Astro.slots.render('default');
+let sidebarContent = '';
+
+if (frontmatter.sidebar) {
+  // 提取 use-cases-section 的内容
+  const useCasesMatch = mainContent.match(/<div class="use-cases-section">([\s\S]*?)<\/div>/);
+  
+  if (useCasesMatch && useCasesMatch[1]) {
+    sidebarContent = useCasesMatch[1];
+    // 从主内容中移除 use-cases-section
+    mainContent = mainContent.replace(/<div class="use-cases-section">[\s\S]*?<\/div>/, '');
+  }
+}
 ---
 
-<Layout title={frontmatter.title}>
-  <div class="markdown-container">
-    <div class="product-header">
-      <h1>{frontmatter.title}</h1>
-      {frontmatter.description && <p class="description">{frontmatter.description}</p>}
+<Layout title={frontmatter.title} description={frontmatter.description}>
+  <div class="product-container">
+    <div class="main-content">
+      <h1 class="product-title">{frontmatter.title}</h1>
+      <Fragment set:html={mainContent} />
     </div>
-    
-    {frontmatter.image && (
-      <div class="featured-image">
-        <img src={frontmatter.image} alt={frontmatter.title} />
-        <div class="image-overlay"></div>
+    <div class="sidebar">
+      {frontmatter.image && (
+        <div class="featured-image">
+          <img src={frontmatter.image} alt={frontmatter.title} />
+          <div class="image-overlay"></div>
+        </div>
+      )}
+      <div class="sidebar-content">
+        <Fragment set:html={sidebarContent} />
       </div>
-    )}
-    
-    <div class="content">
-      <slot />
-    </div>
-    
-    <div class="back-to-products">
-      <a href={`/${getLangFromUrl(Astro.url)}/products`}>
-        <span class="arrow">←</span> 
-        {getLangFromUrl(Astro.url) === 'zh' ? '返回产品列表' : 'Back to Products'}
-      </a>
     </div>
   </div>
 </Layout>
 
-<style>
+<style is:global>
+  /* 表格样式 */
+  .markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .markdown-content th, 
+  .markdown-content td {
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .markdown-content th {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .markdown-content tr {
+    background-color: var(--color-card-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .markdown-content tr:nth-child(even) {
+    background-color: rgba(138, 43, 226, 0.05);
+  }
+  
+  .markdown-content tr:hover {
+    background-color: rgba(138, 43, 226, 0.1);
+  }
+  
   .markdown-container {
     max-width: 800px;
     margin: 0 auto;
@@ -44,10 +85,10 @@ const lang = getLangFromUrl(Astro.url);
     border: 1px solid rgba(138, 43, 226, 0.1);
   }
   
-  h1 {
+  .product-title {
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     color: var(--color-text);
-    margin-bottom: 1rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -303,21 +344,26 @@ const lang = getLangFromUrl(Astro.url);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
-  .content :global(th), .content :global(td) {
+  .content :global(th), 
+  .content :global(td) {
     border: 1px solid rgba(138, 43, 226, 0.2);
     padding: 0.75rem;
     text-align: left;
   }
   
   .content :global(th) {
-    background: var(--gradient-primary);
+    background: var(--color-primary);
     color: white;
     font-weight: 600;
   }
   
   .content :global(tr) {
-    background-color: var(--color-bg-light);
+    background-color: var(--color-card-bg);
     transition: background-color 0.3s ease;
+  }
+  
+  .content :global(tr:nth-child(even)) {
+    background-color: rgba(138, 43, 226, 0.05);
   }
   
   .content :global(tr:hover) {
@@ -344,5 +390,39 @@ const lang = getLangFromUrl(Astro.url);
   .tag:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(138, 43, 226, 0.5);
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 2rem;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+  
+  .sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+  }
+  
+  .sidebar-content {
+    background-color: var(--color-card-bg);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(138, 43, 226, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+      position: static;
+    }
   }
 </style>
