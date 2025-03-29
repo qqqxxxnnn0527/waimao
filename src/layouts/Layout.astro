@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations, languages, getLanguageLink } from '../i18n/utils';
+import Analytics from '../components/Analytics.astro';
 
 interface Props {
   title: string;
@@ -20,6 +21,7 @@ const t = await useTranslations(lang);
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <Analytics />
   </head>
   <body>
     <div class="background-effects">

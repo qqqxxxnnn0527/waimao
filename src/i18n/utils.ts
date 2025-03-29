@@ -6,7 +6,7 @@ export const languages = {
   zh: '中文'
 };
 
-export const defaultLang = 'zh';
+export const defaultLang = 'en';
 
 // 获取当前页面的语言
 export function getLangFromUrl(url: URL) {
