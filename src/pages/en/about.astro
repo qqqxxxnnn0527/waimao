@@ -1,0 +1,268 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = await useTranslations(lang);
+---
+
+<Layout title="About Us | Global Manufacturing Solutions" description="Learn about our journey from a small workshop to a global manufacturing partner. We specialize in high-quality manufacturing and international trade solutions.">
+  <div class="about-container">
+    <section class="about-hero">
+      <div class="about-content">
+        <h1>Our Story</h1>
+        <p class="subtitle">From Local Workshop to Global Manufacturing Partner</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who We Are</h2>
+          <p>Founded in 2010, we started as a small manufacturing workshop in Zhejiang Province, China. Today, we've grown into a trusted global partner for quality manufacturing solutions, serving clients across North America, Europe, and Asia.</p>
+          <p>Our journey has been driven by a simple philosophy: deliver exceptional quality, maintain competitive pricing, and build lasting relationships with our clients.</p>
+        </div>
+        <div class="about-image">
+          <img src="/images/factory.jpg" alt="Our modern manufacturing facility" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section alt-bg">
+      <div class="about-grid reverse">
+        <div class="about-image">
+          <img src="/images/team.jpg" alt="Our dedicated team" />
+        </div>
+        <div class="about-text">
+          <h2>Our Expertise</h2>
+          <p>We specialize in precision manufacturing across multiple industries, with particular expertise in:</p>
+          <ul>
+            <li>Automotive components and accessories</li>
+            <li>Marine equipment and hardware</li>
+            <li>Industrial machinery parts</li>
+            <li>Consumer electronics accessories</li>
+          </ul>
+          <p>Our state-of-the-art facilities and skilled workforce allow us to maintain strict quality control while meeting international standards and certifications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Global Reach, Local Service</h2>
+          <p>We understand the challenges of international trade, which is why we've established overseas warehouses in key markets to ensure fast delivery and convenient after-sales service.</p>
+          <p>Our multilingual team provides personalized support in your time zone, making communication seamless regardless of where you're located.</p>
+        </div>
+        <div class="about-image">
+          <img src="/images/global-map.jpg" alt="Our global presence" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-values">
+      <h2>Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🔍</div>
+          <h3>Quality First</h3>
+          <p>We never compromise on quality, implementing rigorous testing at every stage of production.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Customer Partnership</h3>
+          <p>We view our clients as partners, working collaboratively to achieve mutual success.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <h3>Innovation</h3>
+          <p>We continuously invest in new technologies and processes to stay ahead of industry trends.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌱</div>
+          <h3>Sustainability</h3>
+          <p>We're committed to environmentally responsible manufacturing practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>Ready to Work Together?</h2>
+      <p>Let's discuss how we can support your manufacturing needs.</p>
+      <a href="/en/contact" class="btn primary">Contact Us</a>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .about-hero {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    background: var(--gradient-primary);
+    border-radius: 1rem;
+    color: white;
+  }
+
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+  }
+
+  .about-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.1);
+  }
+
+  .alt-bg {
+    background-color: rgba(138, 43, 226, 0.05);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .reverse {
+    direction: rtl;
+  }
+
+  .reverse .about-text {
+    direction: ltr;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(138, 43, 226, 0.2);
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-text ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .about-text li {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-values {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .about-values h2 {
+    margin-bottom: 3rem;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .value-card {
+    background-color: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .about-cta {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: rgba(138, 43, 226, 0.05);
+    border-radius: 1rem;
+    margin: 4rem 0;
+  }
+
+  .about-cta h2 {
+    margin-bottom: 1rem;
+  }
+
+  .about-cta p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .btn.primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 4px 10px rgba(138, 43, 226, 0.3);
+  }
+  
+  .btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(138, 43, 226, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .reverse {
+      direction: ltr;
+    }
+
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }
+</style>

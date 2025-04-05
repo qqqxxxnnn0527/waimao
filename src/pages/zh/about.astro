@@ -1,0 +1,268 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = await useTranslations(lang);
+---
+
+<Layout title="关于我们 | 全球制造解决方案" description="了解我们从小型工厂到全球制造合作伙伴的发展历程。我们专注于高质量制造和国际贸易解决方案。">
+  <div class="about-container">
+    <section class="about-hero">
+      <div class="about-content">
+        <h1>我们的故事</h1>
+        <p class="subtitle">从本地工厂到全球制造合作伙伴</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>我们是谁</h2>
+          <p>成立于2010年，我们最初是中国浙江省的一家小型制造工厂。如今，我们已发展成为值得信赖的全球制造解决方案合作伙伴，为北美、欧洲和亚洲的客户提供服务。</p>
+          <p>我们的发展历程一直遵循一个简单的理念：提供卓越的品质，保持具有竞争力的价格，并与客户建立长久的合作关系。</p>
+        </div>
+        <div class="about-image">
+          <img src="/images/factory.jpg" alt="我们现代化的制造设施" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section alt-bg">
+      <div class="about-grid reverse">
+        <div class="about-image">
+          <img src="/images/team.jpg" alt="我们专业的团队" />
+        </div>
+        <div class="about-text">
+          <h2>我们的专业领域</h2>
+          <p>我们专注于多个行业的精密制造，特别擅长：</p>
+          <ul>
+            <li>汽车零部件和配件</li>
+            <li>船舶设备和硬件</li>
+            <li>工业机械零部件</li>
+            <li>消费电子配件</li>
+          </ul>
+          <p>我们先进的生产设施和熟练的工作团队使我们能够在满足国际标准和认证的同时保持严格的质量控制。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>全球覆盖，本地服务</h2>
+          <p>我们了解国际贸易的挑战，这就是为什么我们在关键市场建立了海外仓库，以确保快速交付和便捷的售后服务。</p>
+          <p>我们的多语言团队在您的时区提供个性化支持，无论您身在何处，都能实现无缝沟通。</p>
+        </div>
+        <div class="about-image">
+          <img src="/images/global-map.jpg" alt="我们的全球业务" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-values">
+      <h2>我们的核心价值观</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🔍</div>
+          <h3>品质第一</h3>
+          <p>我们绝不在质量上妥协，在生产的每个阶段都实施严格的测试。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>客户伙伴关系</h3>
+          <p>我们视客户为合作伙伴，共同努力实现互利共赢。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <h3>创新精神</h3>
+          <p>我们不断投资新技术和工艺，保持行业领先地位。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌱</div>
+          <h3>可持续发展</h3>
+          <p>我们致力于环保责任的制造实践。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>准备好合作了吗？</h2>
+      <p>让我们讨论如何满足您的制造需求。</p>
+      <a href="/zh/contact" class="btn primary">联系我们</a>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .about-hero {
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    background: var(--gradient-primary);
+    border-radius: 1rem;
+    color: white;
+  }
+
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+  }
+
+  .about-section {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.1);
+  }
+
+  .alt-bg {
+    background-color: rgba(138, 43, 226, 0.05);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .reverse {
+    direction: rtl;
+  }
+
+  .reverse .about-text {
+    direction: ltr;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(138, 43, 226, 0.2);
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-text ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .about-text li {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-values {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .about-values h2 {
+    margin-bottom: 3rem;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .value-card {
+    background-color: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .about-cta {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: rgba(138, 43, 226, 0.05);
+    border-radius: 1rem;
+    margin: 4rem 0;
+  }
+
+  .about-cta h2 {
+    margin-bottom: 1rem;
+  }
+
+  .about-cta p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .btn.primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 4px 10px rgba(138, 43, 226, 0.3);
+  }
+  
+  .btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(138, 43, 226, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .reverse {
+      direction: ltr;
+    }
+
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  }
+</style>
