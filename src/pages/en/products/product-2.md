@@ -8,14 +8,6 @@ sidebar: true
 
 Our Stainless Steel Battery Relocation Kit is a premium solution for securely housing and relocating your battery in vehicles, boats, and other applications.
 
-## Key Features
-
-- **Durable Construction** - Made from high-quality stainless steel for maximum durability and corrosion resistance
-- **Universal Fit** - Compatible with most standard size batteries for cars, RVs, boats, and marine applications
-- **Secure Mounting** - Includes heavy-duty mounting hardware for stable and secure installation
-- **Weather Resistant** - Designed to withstand harsh outdoor conditions and marine environments
-- **Easy Installation** - Complete kit with all necessary hardware and detailed instructions
-
 ## Technical Specifications
 
 <div class="styled-table">
@@ -49,24 +41,6 @@ Our Stainless Steel Battery Relocation Kit is a premium solution for securely ho
 
 > "I needed a secure way to mount an auxiliary battery in my off-road Jeep, and this kit was exactly what I needed." - Sarah K., Off-road Driver
 
-## Product Features
-
-### Corrosion Resistant
-
-The 304 stainless steel construction ensures long-lasting performance even in saltwater environments.
-
-### Ventilated Design
-
-Strategic ventilation prevents battery gas buildup while keeping water and debris out.
-
-### Secure Locking Mechanism
-
-Includes a locking system to prevent theft and ensure the battery stays in place during rough conditions.
-
-## Installation Guide
-
-Installation is straightforward with the included hardware. Simply mount the base to your desired location, place your battery inside, and secure with the included top bracket and fasteners.
-
 ## Learn More
 
-For more information about our Stainless Steel Battery Relocation Kit, please [contact us](/en/contact) or [view installation videos](/en/videos).
+For more information about our Stainless Steel Battery Relocation Kit, please [contact us](/en/contact) .
