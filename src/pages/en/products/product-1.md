@@ -1,12 +1,10 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: Product One
-description: Detailed introduction and technical specifications of Product One
+title: Exhaust Muffler
+description: Electric Valvetronic Exhaust Cutout with Muffler Cat Back Exhaust System Valve Kit.
 image: /images/product-1.jpg
 sidebar: true
 ---
-
-# Exhaust Muffler 
 
 This is our flagship product with multiple advanced features and excellent performance.
 

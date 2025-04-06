@@ -1,12 +1,10 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: Product Three
+title: Gasoline engine vegetable and medicinal material seeder
 description: Detailed introduction and technical specifications of Product Three
-image: /images/product-3.jpg
+image: /images/Gasoline-material-seeder.jpg
 sidebar: true
 ---
-
-# Product Three
 
 Product Three is our advanced solution designed for large enterprises and organizations, offering the most powerful features and highest level of security.
 

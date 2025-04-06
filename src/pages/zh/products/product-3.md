@@ -1,12 +1,10 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: 产品三
+title: 汽油机款蔬菜药材播种机
 description: 产品三的详细介绍和技术规格
-image: /images/product-3.jpg
+image: /images/Gasoline-material-seeder.jpg
 sidebar: true
 ---
-
-# 产品三
 
 产品三是我们专为大型企业和组织设计的高级解决方案，提供最强大的功能和最高级别的安全性。
 
