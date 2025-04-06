@@ -425,4 +425,39 @@ if (frontmatter.sidebar) {
       position: static;
     }
   }
+
+  .styled-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-table th, 
+  .styled-table td {
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .styled-table th {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .styled-table tr {
+    background-color: var(--color-card-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: rgba(138, 43, 226, 0.05);
+  }
+  
+  .styled-table tr:hover {
+    background-color: rgba(138, 43, 226, 0.1);
+  }
 </style>

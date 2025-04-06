@@ -1,11 +1,11 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: 产品一
+title: 单进双出电动阀门鼓
 description: 产品一的详细介绍和技术规格
 image: /images/product-1.jpg
 ---
 
-# 产品一
+# 单进双出电动阀门鼓
 
 这是我们的旗舰产品，具有多种先进功能和卓越性能。
 
@@ -18,12 +18,16 @@ image: /images/product-1.jpg
 
 ## 技术规格
 
+<div class="styled-table">
+
 | 规格 | 详情 |
 |------|------|
 | 处理能力 | 每秒处理10,000条记录 |
 | 存储容量 | 最大支持10TB数据 |
 | 兼容性 | 支持Windows、Mac和Linux |
 | 接口 | REST API, GraphQL |
+
+</div>
 
 ## 使用场景
 

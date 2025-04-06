@@ -18,6 +18,8 @@ Our Stainless Steel Battery Relocation Kit is a premium solution for securely ho
 
 ## Technical Specifications
 
+<div class="styled-table">
+
 | Specification | Details |
 | --- | --- |
 | Material | 304 Stainless Steel |
@@ -26,6 +28,8 @@ Our Stainless Steel Battery Relocation Kit is a premium solution for securely ho
 | Battery Compatibility | Group 24, 27, 31 batteries |
 | Mounting Hardware | Included stainless steel bolts and brackets |
 | Warranty | 2-year limited warranty |
+
+</div>
 
 <div class="use-cases-section">
   <h2>Use Cases</h2>

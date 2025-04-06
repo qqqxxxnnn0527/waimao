@@ -17,20 +17,7 @@ Product Three is our advanced solution designed for large enterprises and organi
 - **Customization** - Offers deep customization options to meet specific industry needs
 
 ## Technical Specifications
-
 <div class="styled-table">
-
-| Specification | Details |
-| --- | --- |
-| Material | High-grade aluminum alloy |
-| Dimensions | 15" x 10" x 4" (L x W x H) |
-| Weight | 2.5 lbs |
-| Compatibility | Universal fit for most vehicles |
-| Installation | DIY with included hardware |
-| Warranty | 1-year manufacturer warranty |
-
-</div>
-
 | Specification | Details |
 | --- | --- |
 | Processing Capacity | 50,000 records per second |
@@ -38,7 +25,7 @@ Product Three is our advanced solution designed for large enterprises and organi
 | Compatibility | Supports all major operating systems and cloud platforms |
 | Interfaces | REST API, GraphQL, SOAP |
 | Deployment Options | Cloud, on-premises, or hybrid deployment |
-
+</div>
 ## Use Cases
 
 This product is suitable for the following scenarios:
