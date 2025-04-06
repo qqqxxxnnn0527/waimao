@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: Product One
 description: Detailed introduction and technical specifications of Product One
 image: /images/product-1.jpg
+sidebar: true
 ---
 
 # Exhaust Muffler 
@@ -18,6 +19,8 @@ This is our flagship product with multiple advanced features and excellent perfo
 
 ## Technical Specifications
 
+<div class="styled-table">
+
 | Specification | Details |
 |--------------|---------|
 | Processing Capacity | 10,000 records per second |
@@ -25,14 +28,23 @@ This is our flagship product with multiple advanced features and excellent perfo
 | Compatibility | Supports Windows, Mac, and Linux |
 | Interfaces | REST API, GraphQL |
 
+</div>
+
 ## Use Cases
 
-This product is suitable for the following scenarios:
+<div class="use-cases-section">
 
-1. Large enterprise data processing
-2. Real-time data analysis
-3. Automated workflows
-4. Multi-platform data integration
+  <h2>Use Cases</h2>
+  <p>This product is ideal for the following applications:</p>
+  <ol>
+    <li>Large enterprise data processing</li>
+    <li>Real-time data analysis</li>
+    <li>Automated workflow systems</li>
+    <li>Multi-platform data integration</li>
+    <li>Cloud-based computing environments</li>
+  </ol>
+
+</div>
 
 ## Customer Reviews
 

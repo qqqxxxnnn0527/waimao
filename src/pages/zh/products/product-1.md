@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: 单进双出电动阀门鼓
 description: 产品一的详细介绍和技术规格
 image: /images/product-1.jpg
+sidebar: true
 ---
 
 # 单进双出电动阀门鼓
@@ -31,12 +32,17 @@ image: /images/product-1.jpg
 
 ## 使用场景
 
-本产品适用于以下场景：
-
-1. 大型企业数据处理
-2. 实时数据分析
-3. 自动化工作流程
-4. 多平台数据集成
+<div class="use-cases-section">
+  <h2>使用场景</h2>
+  <p>本产品适用于以下场景：</p>
+  <ol>
+    <li>大型企业数据处理</li>
+    <li>实时数据分析</li>
+    <li>自动化工作流程</li>
+    <li>多平台数据集成</li>
+    <li>云计算环境</li>
+  </ol>
+</div>
 
 ## 客户评价
 

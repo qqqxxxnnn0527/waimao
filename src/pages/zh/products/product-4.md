@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: Product Three
 description: Detailed introduction and technical specifications of Product Three
 image: /images/product-3.jpg
+sidebar: true
 ---
 
 # Product Three
@@ -26,9 +27,19 @@ Product Three is our advanced solution designed for large enterprises and organi
 | Interfaces | REST API, GraphQL, SOAP |
 | Deployment Options | Cloud, on-premises, or hybrid deployment |
 </div>
-## Use Cases
+## 使用场景
 
-This product is suitable for the following scenarios:
+<div class="use-cases-section">
+  <h2>使用场景</h2>
+  <p>本产品适用于以下场景：</p>
+  <ol>
+    <li>工业自动化系统</li>
+    <li>制造过程控制</li>
+    <li>能源管理解决方案</li>
+    <li>智能建筑基础设施</li>
+    <li>物联网设备集成</li>
+  </ol>
+</div>
 
 1. Large enterprise data centers
 2. Financial institution transaction systems

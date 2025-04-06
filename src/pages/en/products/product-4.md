@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: Product Three
 description: Detailed introduction and technical specifications of Product Three
 image: /images/product-3.jpg
+sidebar: true
 ---
 
 # Product Three
@@ -27,6 +28,18 @@ Product Three is our advanced solution designed for large enterprises and organi
 | Deployment Options | Cloud, on-premises, or hybrid deployment |
 </div>
 ## Use Cases
+
+<div class="use-cases-section">
+  <h2>Use Cases</h2>
+  <p>This product is ideal for the following applications:</p>
+  <ol>
+    <li>Industrial automation systems</li>
+    <li>Manufacturing process control</li>
+    <li>Energy management solutions</li>
+    <li>Smart building infrastructure</li>
+    <li>IoT device integration</li>
+  </ol>
+</div>
 
 This product is suitable for the following scenarios:
 

@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: 产品四
 description: 产品四的详细介绍和技术规格
 image: /images/product-2.jpg
+sidebar: true
 ---
 
 # 产品四
@@ -38,6 +39,18 @@ image: /images/product-2.jpg
 | 集成能力 | 支持500+第三方应用集成 |
 
 ## 使用场景
+
+<div class="use-cases-section">
+  <h2>使用场景</h2>
+  <p>这款电池盒适用于以下应用场景：</p>
+  <ol>
+    <li>需要安全存放电池的船舶和游艇</li>
+    <li>需要额外电池容量的房车和露营车</li>
+    <li>具有定制电池设置的越野车辆</li>
+    <li>配备电动推进器的皮划艇和小型水上船只</li>
+    <li>需要重新布置电池的赛车和性能车辆</li>
+  </ol>
+</div>
 
 本产品适用于以下场景：
 

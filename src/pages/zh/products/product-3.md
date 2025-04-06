@@ -3,6 +3,7 @@ layout: ../../../layouts/MarkdownLayout.astro
 title: 产品三
 description: 产品三的详细介绍和技术规格
 image: /images/product-3.jpg
+sidebar: true
 ---
 
 # 产品三
@@ -39,7 +40,17 @@ image: /images/product-3.jpg
 
 ## 使用场景
 
-本产品适用于以下场景：
+<div class="use-cases-section">
+  <h2>使用场景</h2>
+  <p>本产品适用于以下场景：</p>
+  <ol>
+    <li>汽车性能提升</li>
+    <li>赛车和竞速驾驶</li>
+    <li>越野车辆改装</li>
+    <li>定制汽车制造和修复</li>
+    <li>车辆维护和诊断</li>
+  </ol>
+</div>
 
 1. 大型企业数据中心
 2. 金融机构交易系统
