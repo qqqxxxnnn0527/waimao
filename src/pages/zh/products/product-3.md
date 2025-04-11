@@ -4,6 +4,7 @@ title: 传统汽油机自走式蔬菜播种机
 description: 适用于所有小粒的蔬菜、花卉、谷物、中药的精确播种
 image: /images/Gasoline-material-seeder.jpg
 sidebar: true
+updatedDate: 2025-04-11
 ---
 
 CTQZ-1100型播种机适用于所有小粒的蔬菜、花卉、谷物、中药的精确播种。
