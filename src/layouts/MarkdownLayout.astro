@@ -23,6 +23,12 @@ if (frontmatter.sidebar) {
     <div class="main-content">
       <h1 class="product-title">{frontmatter.title}</h1>
       <Fragment set:html={mainContent} />
+      
+      {frontmatter.updatedDate && (
+        <div class="update-info">
+          <p>最后更新时间: {new Date(frontmatter.updatedDate).toLocaleDateString()}</p>
+        </div>
+      )}
     </div>
     <div class="sidebar">
       {frontmatter.image && (
@@ -459,5 +465,14 @@ if (frontmatter.sidebar) {
   
   .styled-table tr:hover {
     background-color: rgba(138, 43, 226, 0.1);
+  }
+  
+  .update-info {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(138, 43, 226, 0.1);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    text-align: right;
   }
 </style>

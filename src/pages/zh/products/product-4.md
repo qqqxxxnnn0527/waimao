@@ -4,6 +4,7 @@ title: 韩式手推四行精密播种机
 description: Detailed introduction and technical specifications of Product Three
 image: /images/manual_seeder_cover.jpg
 sidebar: true
+updatedDate: 2025-04-11
 ---
 
 韩式手推四行蔬菜播种机（ST-400）适用于所有小粒的蔬菜、药材、花卉、谷物的精确播种。
