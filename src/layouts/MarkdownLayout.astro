@@ -16,6 +16,10 @@ if (frontmatter.sidebar) {
     mainContent = mainContent.replace(/<div class="use-cases-section">[\s\S]*?<\/div>/, '');
   }
 }
+
+// 检查当前页面是中文还是英文
+const isEnglish = Astro.url.pathname.includes('/en/');
+const lastUpdatedText = isEnglish ? "Last updated:" : "最后更新时间:";
 ---
 
 <Layout title={frontmatter.title} description={frontmatter.description}>
@@ -26,7 +30,7 @@ if (frontmatter.sidebar) {
       
       {frontmatter.updatedDate && (
         <div class="update-info">
-          <p>最后更新时间: {new Date(frontmatter.updatedDate).toLocaleDateString()}</p>
+          <p>{lastUpdatedText} {new Date(frontmatter.updatedDate).toLocaleDateString()}</p>
         </div>
       )}
     </div>

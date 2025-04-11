@@ -1,72 +1,47 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
-title: Hand Push Vegetable Seeder Planter
-description: Detailed introduction and technical specifications of Product Three
+title: Korean Style Four-Row Manual Precision Seeder
+description: Detailed introduction and technical specifications of our precision seeder
 image: /images/manual_seeder_cover.jpg
 sidebar: true
+updatedDate: 2025-04-11
 ---
 
-Product Three is our advanced solution designed for large enterprises and organizations, offering the most powerful features and highest level of security.
+The Korean Style Four-Row Vegetable Seeder (ST-400) is suitable for precise sowing of all small seeds including vegetables, medicinal herbs, flowers, and grains.
 
 ## Key Features
 
-- **Enterprise-Grade Performance** - Designed for handling large-scale data and high-concurrency scenarios
-- **Advanced Analytics** - Built-in powerful data analysis and visualization tools
-- **Comprehensive Security** - Complies with the highest industry security standards, including end-to-end encryption
-- **Customization** - Offers deep customization options to meet specific industry needs
+- Manual push operation, environmentally friendly and energy-saving.
+- Adjustable plant spacing, row spacing, and sowing depth.
+- Capable of one seed per hole with 99% accuracy.
 
 ## Technical Specifications
 <div class="styled-table">
+
 | Specification | Details |
-| --- | --- |
-| Processing Capacity | 50,000 records per second |
-| Storage Capacity | Supports up to 100TB of data |
-| Compatibility | Supports all major operating systems and cloud platforms |
-| Interfaces | REST API, GraphQL, SOAP |
-| Deployment Options | Cloud, on-premises, or hybrid deployment |
+|------|------|
+| Dimensions (cm) | 96x67x38 (External) 95x71x30 (Packaged)|
+| Weight (kg) | 20 |
+| Plant Spacing (cm) | 1-51 |
+| Row Spacing (cm) | 8-52 |
+| Efficiency (acre/hour) | 1-2 |
+
 </div>
-## Use Cases
+
 
 <div class="use-cases-section">
   <h2>Use Cases</h2>
   <p>This product is ideal for the following applications:</p>
   <ol>
-    <li>Industrial automation systems</li>
-    <li>Manufacturing process control</li>
-    <li>Energy management solutions</li>
-    <li>Smart building infrastructure</li>
-    <li>IoT device integration</li>
+    <li>Vegetables</li>
+    <li>Medicinal herbs</li>
+    <li>Flowers</li>
+    <li>Grains</li>
   </ol>
 </div>
 
-This product is suitable for the following scenarios:
 
-1. Large enterprise data centers
-2. Financial institution transaction systems
-3. Government and public sector information management
-4. Multinational company global business coordination
-5. Healthcare institution patient data management
-
-## Customer Reviews
-
-> "Product Three has helped us integrate our global business data, significantly improving decision-making efficiency." - James Liu, CIO of Multinational Group
-
-> "Security and reliability were the main reasons we chose Product Three, and it hasn't disappointed us." - Dr. Zhang, Head of Financial Technology
-
-## Advanced Features
-
-### Intelligent Automation
-
-Product Three provides powerful workflow automation capabilities that can automatically execute complex tasks based on preset rules, reducing manual intervention and improving efficiency.
-
-### Predictive Analytics
-
-Utilizes machine learning algorithms to analyze historical data and predict future trends, helping businesses make more informed decisions.
-
-### Global Deployment
-
-Supports multi-region deployment and data synchronization, ensuring efficient system access for offices around the world.
 
 ## Learn More
 
-If you want to learn more about Product Three, please [contact us](/en/contact) or request a [free demonstration](/en/demo).
+For more information about our Korean Style Four-Row Manual Precision Seeder, please [contact us](/en/contact).
