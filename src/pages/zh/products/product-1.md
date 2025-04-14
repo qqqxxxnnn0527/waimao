@@ -4,6 +4,7 @@ title: 单进双出电动阀门鼓
 description: 产品一的详细介绍和技术规格
 image: /images/product-1.jpg
 sidebar: true
+updatedDate: 2025-04-14
 ---
 
 该款不锈钢材质单进双出电动阀门鼓适合各类汽车排气系统改装。
