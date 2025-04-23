@@ -46,6 +46,49 @@ const t = await useTranslations(lang);
       </div>
     </div>
   </section>
+
+    <!-- 新增用户指南部分 -->
+    <section class="user-guide">
+      <h2>How to Get Our Products</h2>
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Browse Product Catalog</h3>
+            <p>On our products page, you can browse all products by category and view detailed specifications and application scenarios.</p>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Explore Product Details</h3>
+            <p>Click on products of interest to view detailed descriptions, technical parameters, and customer reviews to help you make informed decisions.</p>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Request Product Brochure</h3>
+            <p>Contact us via email to get a complete product brochure. We will respond to your inquiry within 12 hours.</p>
+          </div>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Customize Your Requirements</h3>
+            <p>Communicate with our professional team, and we can provide customized solutions based on your specific needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="guide-cta">
+        <a href="/en/products" class="btn primary">Browse Products Now</a>
+        <a href="/en/contact" class="btn secondary">Contact Us</a>
+      </div>
+    </section>
+    
 </Layout>
 
 <style>
@@ -161,4 +204,93 @@ const t = await useTranslations(lang);
       font-size: 2.25rem;
     }
   }
+  
+  /* 用户指南部分样式 */
+  .user-guide {
+    margin: 6rem 0;
+    text-align: center;
+  }
+  
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .step-card {
+    background-color: var(--color-card-bg);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border: 1px solid rgba(138, 43, 226, 0.2);
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(138, 43, 226, 0.5);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(138, 43, 226, 0.3);
+  }
+  
+  .step-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+    font-size: 1.25rem;
+  }
+  
+  .step-content p {
+    color: var(--color-text);
+    opacity: 0.9;
+  }
+  
+  .guide-cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .btn.secondary {
+    background: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+  }
+  
+  .btn.secondary:hover {
+    background-color: rgba(138, 43, 226, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .steps-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .guide-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
 </style>
