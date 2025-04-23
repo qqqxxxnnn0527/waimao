@@ -2,25 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "astro",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=0, must-revalidate"
-      },
-      "continue": true
-    },
-    {
-      "handle": "filesystem"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*/",
-      "destination": "/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",
@@ -35,5 +16,13 @@
         }
       ]
     }
-  ]
+  ],
+  "redirects": [
+    {
+      "source": "/:path*/",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true
 }
