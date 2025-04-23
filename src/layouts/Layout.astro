@@ -56,8 +56,148 @@ const t = await useTranslations(lang);
       <slot />
     </main>
     <footer>
-      <p>{t('footer.copyright')}</p>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/logo.png" alt="DuoForge Global Logo" />
+          <p class="tagline">Forging Connections, Powering Progress – From Our Workshop to Your World</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>{t('footer.quickLinks')}</h3>
+            <ul>
+              <li><a href={`/${lang}/`}>{t('nav.home')}</a></li>
+              <li><a href={`/${lang}/products`}>{t('nav.products')}</a></li>
+              <li><a href={`/${lang}/about`}>{t('nav.about')}</a></li>
+              <li><a href={`/${lang}/contact`}>{t('nav.contact')}</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>{t('footer.contact')}</h3>
+            <ul>
+              <li><i class="icon">📧</i> info@duoforgeglobal.com</li>
+              <li><i class="icon">🌐</i> www.duoforgeglobal.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>{t('footer.copyright')} &copy; {new Date().getFullYear()} DuoForge Global.</p>
+      </div>
     </footer>
+
+    <style is:global>
+      /* 现有样式... */
+      
+      /* 添加footer样式 */
+      footer {
+        background-color: var(--color-bg-light);
+        padding: 3rem 2rem 1.5rem;
+        margin-top: 4rem;
+        border-top: 1px solid rgba(138, 43, 226, 0.3);
+      }
+      
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      
+      .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .footer-logo img {
+        height: 60px;
+        margin-bottom: 1rem;
+      }
+      
+      .tagline {
+        font-style: italic;
+        color: var(--color-text);
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        max-width: 400px;
+      }
+      
+      .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      
+      .footer-section h3 {
+        color: var(--color-text);
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+      
+      .footer-section h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background: var(--gradient-primary);
+      }
+      
+      .footer-section ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-section li {
+        margin-bottom: 0.75rem;
+      }
+      
+      .footer-section a {
+        color: var(--color-text);
+        opacity: 0.8;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .footer-section a:hover {
+        color: var(--color-secondary);
+        opacity: 1;
+        transform: translateX(5px);
+      }
+      
+      .footer-section .icon {
+        margin-right: 0.5rem;
+      }
+      
+      .footer-bottom {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(138, 43, 226, 0.1);
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--color-text);
+        opacity: 0.7;
+      }
+      
+      @media (max-width: 768px) {
+        .footer-container {
+          grid-template-columns: 1fr;
+        }
+        
+        .footer-links {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </body>
 </html>
 

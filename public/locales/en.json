@@ -22,6 +22,9 @@
     "send": "Send"
   },
   "footer": {
-    "copyright": "Copyright © 2025"
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "copyright": "Copyright",
+    "rights": "All Rights Reserved"
   }
 }

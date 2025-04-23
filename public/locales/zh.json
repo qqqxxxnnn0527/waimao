@@ -22,6 +22,9 @@
     "send": "发送"
   },
   "footer": {
-    "copyright": "版权所有 © 2025"
+    "quickLinks": "快速链接",
+    "contact": "联系我们",
+    "copyright": "版权所有",
+    "rights": "保留所有权利"
   }
 }
